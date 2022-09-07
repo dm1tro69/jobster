@@ -1,6 +1,8 @@
 import Landing from "./pages/Landing";
 import {Error, Dashboard, Register} from './pages'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
             <Route path={'/register'} element={<Register/>}/>
             <Route path={'*'} element={<Error/>}/>
         </Routes>
-
+        <ToastContainer/>
     </BrowserRouter>
   );
 }

@@ -17,7 +17,7 @@ const Wrapper = styled.section`
     text-align: center;
   }
   p {
-    margin: 0;
+    margin: 0 ;
     margin-top: 1rem;
     text-align: center;
   }
