@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873e7ff1-46da-427c-af04-8abbff033adc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/user/userSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/localStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BigSlidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SmallSidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/AddJob.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/AllJob.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/SharedLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/Stats.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Dashboard/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/user/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/user/userSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +78,8 @@
       <workItem from="1662459442436" duration="6166000" />
       <workItem from="1662487874872" duration="100000" />
       <workItem from="1662537090204" duration="10935000" />
-      <workItem from="1662629475271" duration="6806000" />
+      <workItem from="1662629475271" duration="9585000" />
+      <workItem from="1662714310130" duration="7156000" />
     </task>
     <servers />
   </component>

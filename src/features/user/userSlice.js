@@ -5,6 +5,7 @@ import {addUserToLocalStorage, getUserFromLocalStorage} from "../../utils/localS
 
 const initialState = {
    isLoading: false,
+    isSidebarOpen: false,
     user: getUserFromLocalStorage()
 
 }
@@ -30,7 +31,9 @@ const userSlice = createSlice({
     name: 'user',
     initialState,
     reducers: {
-
+       toggleSidebar: (state) => {
+           state.isSidebarOpen = !state.isSidebarOpen
+       }
     },
     extraReducers: {
         [registerUser.pending]: (state) => {
@@ -63,4 +66,5 @@ const userSlice = createSlice({
         }
     }
 })
+export const {toggleSidebar} = userSlice.actions
 export default userSlice.reducer
