@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873e7ff1-46da-427c-af04-8abbff033adc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/features/user/userThunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BigSlidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BigSlidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormRow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormRow.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/user/userSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/user/userSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,8 @@
       <workItem from="1662537090204" duration="10935000" />
       <workItem from="1662629475271" duration="9585000" />
       <workItem from="1662714310130" duration="8220000" />
-      <workItem from="1662791316262" duration="11396000" />
+      <workItem from="1662791316262" duration="12621000" />
+      <workItem from="1662898752500" duration="8937000" />
     </task>
     <servers />
   </component>
