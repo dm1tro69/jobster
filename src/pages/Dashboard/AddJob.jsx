@@ -4,7 +4,7 @@ import Wrapper from "../../assets/wrappers/DashboardFormPage";
 import {toast} from "react-toastify";
 import FormRow from "../../components/FormRow";
 import FormRowSelect from "../../components/FormRowSelect";
-import {clearValues, createJob, handleChange} from "../../features/job/jobSlice";
+import {clearValues, createJob, handleChange, editJob} from "../../features/job/jobSlice";
 
 const AddJob = () => {
     const {isLoading, position, company, jobLocation, jobType, jobTypeOptions, status, statusOptions, isEditing, editJobId} = useSelector(state => state.job)
@@ -19,6 +19,12 @@ const AddJob = () => {
       e.preventDefault()
         if (!position || !company || !jobLocation){
             toast.error('Please Fill Out All Field')
+            return;
+        }
+        if (isEditing) {
+            dispatch(editJob({jobId: editJobId, job: {
+                    position, company, jobLocation, jobType, status
+                }}))
             return;
         }
         dispatch(createJob({position, company, jobLocation, jobType, status}))
