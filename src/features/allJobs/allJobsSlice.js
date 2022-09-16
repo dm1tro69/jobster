@@ -22,6 +22,18 @@ const initialState = {
     ...initialFilterState
 }
 
+export const showStats = createAsyncThunk('allJobs/showStats', async (_, thunkAPI) => {
+    try {
+        const resp = await customFetch.get('jobs/stats', {
+            headers: {
+                authorization: `Bearer ${thunkAPI.getState().user.user.token}`
+            }
+        })
+        return resp.data
+    }catch (e) {
+        thunkAPI.rejectWithValue(e.response.data.msg)
+    }
+})
 
 export const getAllJobs = createAsyncThunk('allJobs/getJobs', async (_, thunkAPI)=> {
     let url = `/jobs`
@@ -57,6 +69,18 @@ const allJobsSlice = createSlice({
             state.jobs = payload.jobs
         },
         [getAllJobs.rejected]: (state, {payload}) => {
+            state.isLoading = false
+            toast.error(payload)
+        },
+        [showStats.pending]: (state) => {
+            state.isLoading = true
+        },
+        [showStats.fulfilled]: (state, {payload}) => {
+            state.isLoading = false
+            state.stats = payload.defaultStats
+            state.monthlyApplications = payload.monthlyApplications
+        },
+        [showStats.rejected]: (state, {payload}) => {
             state.isLoading = false
             toast.error(payload)
         }

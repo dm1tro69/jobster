@@ -45,7 +45,7 @@ const Register = () => {
        if (user){
            setTimeout(()=> {
                navigate('/')
-           }, 3000)
+           }, 2000)
        }
     }, [user, navigate])
 
@@ -86,6 +86,13 @@ const Register = () => {
                     className={'btn btn-block'}
                 >
                     Submit
+                </button>
+                <button
+                    type={'button'}
+                    className={'btn btn-block btn-hipster'}
+                    onClick={()=> dispatch(loginUser({email: 'testUser@test.com', password: 'secret'}))}
+                >
+                    {isLoading? 'loading...': 'demo'}
                 </button>
                 <p>{values.isMember ? 'Not a member yet?': 'Already a member?'}
                     <button

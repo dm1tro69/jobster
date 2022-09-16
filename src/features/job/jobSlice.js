@@ -3,6 +3,7 @@ import customFetch from "../../utils/axios";
 import {toast} from "react-toastify";
 import {getUserFromLocalStorage} from "../../utils/localStorage";
 import {getAllJobs, hideLoading, showLoading} from "../allJobs/allJobsSlice";
+import {createJobThunk, deleteJobThunk, editeJobThunk} from "./jobThunk";
 
 const initialState = {
     isLoading: false,
@@ -17,50 +18,11 @@ const initialState = {
     editJobId: ''
 }
 
-export const createJob = createAsyncThunk('job/createJob', async (job, thunkApi) => {
-    try {
-        const resp = await customFetch.post('/jobs', job, {
-            headers: {
-                authorization: `Bearer ${thunkApi.getState().user.user.token}`
-            }
-        })
-        thunkApi.dispatch(clearValues())
-        return resp.data
-    }catch (e) {
-      return thunkApi.rejectWithValue(e.response.data.msg)
-    }
-})
+export const createJob = createAsyncThunk('job/createJob', createJobThunk)
+export const deleteJob = createAsyncThunk('allJobs/deleteJob', deleteJobThunk)
+export const editJob = createAsyncThunk('job/editJob', editeJobThunk)
 
-export const deleteJob = createAsyncThunk('allJobs/deleteJob', async (jobId, thunkApi)=> {
-    thunkApi.dispatch(showLoading())
-    try {
-        const resp = await customFetch.delete(`/jobs/${jobId}`, {
-            headers: {
-                authorization: `Bearer ${thunkApi.getState().user.user.token}`
-            }
-        })
-        thunkApi.dispatch(getAllJobs())
-        return resp.data
-    }catch (e) {
-        thunkApi.dispatch(hideLoading())
-        return thunkApi.rejectWithValue(e.response.data.msg)
-    }
-})
 
-export const editJob = createAsyncThunk('job/editJob', async ({jobId, job}, thunkApi) => {
-    try {
-        const resp = await customFetch.patch(`/jobs/${jobId}`, job, {
-            headers: {
-                authorization: `Bearer ${thunkApi.getState().user.user.token}`
-            }
-        })
-        thunkApi.dispatch(clearValues())
-        return resp.data
-
-    }catch (e) {
-        return thunkApi.rejectWithValue(e.response.data.msg)
-    }
-})
 
 export const jobSlice = createSlice({
     name: 'job',
