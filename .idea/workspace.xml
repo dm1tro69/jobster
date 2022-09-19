@@ -2,24 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873e7ff1-46da-427c-af04-8abbff033adc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AreaCharts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BarCharts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ChartsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StatItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StatsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/job/jobThunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageBtnContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/palette.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/previews.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/useInitial.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BarCharts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BarCharts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/JobsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/JobsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StatsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StatsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/allJobs/allJobsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/allJobs/allJobsSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/job/jobSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/job/jobSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Stats.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/Stats.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.haulmont.rcb.palette" />
+        <option value="com.haulmont.rcb.previews" />
+        <option value="com.haulmont.rcb.index" />
+        <option value="com.haulmont.rcb.useInitial" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,6 +62,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -85,7 +104,12 @@
       <workItem from="1663063528794" duration="11191000" />
       <workItem from="1663141090502" duration="12280000" />
       <workItem from="1663231192765" duration="9166000" />
-      <workItem from="1663310772240" duration="3040000" />
+      <workItem from="1663310772240" duration="3912000" />
+      <workItem from="1663333398264" duration="1843000" />
+      <workItem from="1663401065037" duration="6647000" />
+      <workItem from="1663495592549" duration="4861000" />
+      <workItem from="1663588600775" duration="944000" />
+      <workItem from="1663589689332" duration="2934000" />
     </task>
     <servers />
   </component>

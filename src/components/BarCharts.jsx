@@ -7,7 +7,7 @@ const BarCharts = ({data}) => {
             <BarChart data={data} margin={{top: 50}}>
                 <CartesianGrid strokeDasharray={'10 10'}/>
                 <XAxis dataKey={'date'}/>
-                <XAxis allowDecimals={false}/>
+                <YAxis allowDecimals={false}/>
                 <Tooltip/>
                 <Bar dataKey={'count'} fill={'#2cb1bc'} barSize={75} stroke={'#2cb1bc'}/>
             </BarChart>
